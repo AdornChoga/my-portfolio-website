@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import NavbarDesktop from './components/navbar-desktop/NavbarDesktop';
 import NavbarMobile from './components/navbar-mobile/NavbarMobile';
+import Views from './Views/Views';
 
 const App = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
@@ -16,10 +17,10 @@ const App = () => {
   }, []);
 
   return (
-    <div className={isDesktop && 'd-flex main-container'}>
+    <div className={isDesktop ? 'row main-container' : ''}>
       {isDesktop ? <NavbarDesktop /> : <NavbarMobile />}
-      <div className="border w-100">
-        <h1>Welcome</h1>
+      <div className="col border w-100 page-content">
+        <Views />
       </div>
     </div>
   );
