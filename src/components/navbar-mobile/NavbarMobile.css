@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  background-color: #222 !important;
+}
+
+.my-name {
+  color: white;
+  font-size: 2rem;
+}
+
+.close-button-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button-cont button {
+  font-size: 1.8rem;
+  background-color: white !important;
+}
