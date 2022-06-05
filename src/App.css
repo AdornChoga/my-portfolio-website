@@ -1,3 +1,19 @@
 .main-container {
   height: 100vh;
 }
+
+.navbar-container {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  width: 15rem;
+  padding: 0;
+  background-color: #222;
+}
+
+@media screen and (min-width: 991px) {
+  .page-content {
+    margin-left: 15rem;
+  }
+}

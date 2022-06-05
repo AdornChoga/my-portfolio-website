@@ -1,29 +1,23 @@
 import React from 'react';
-import {
-  Navbar, Container, Offcanvas, Nav,
-} from 'react-bootstrap';
+import { Navbar, Container, Offcanvas } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './NavbarMobile.css';
+import NavigationBar from '../navigation-bar/NavigationBar';
 
 const NavbarMobile = () => (
   <>
-    <Navbar key="md" bg="light" expand="md" className="mb-3">
+    <Navbar key="lg" bg="light" expand="lg" className="mb-3 fixed-top navbar">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
-        <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
+        <Link to="/about-me" className="my-name">Adorn Choga</Link>
+        <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" className="bg-light" />
         <Navbar.Offcanvas
-          id="offcanvasNavbar-expand-md"
-          aria-labelledby="offcanvasNavbarLabel-expand-md"
+          id="offcanvasNavbar-expand-lg"
+          aria-labelledby="offcanvasNavbarLabel-expand-lg"
           placement="end"
         >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
-              Offcanvas
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-            </Nav>
+          <Offcanvas.Header closeButton className="bg-dark close-button-cont" />
+          <Offcanvas.Body className="bg-dark">
+            <NavigationBar />
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

@@ -7,11 +7,11 @@ import {
   FaSuitcase,
   FaEnvelope,
 } from 'react-icons/fa';
-import './NavbarDesktop.css';
+import './NavigationBar.css';
 import MyProfile from '../../assets/images/my-profile.png';
 
 const NavbarDesktop = () => (
-  <nav className="col-1 navbar-container">
+  <nav>
     <div className="profile-section">
       <img src={MyProfile} alt="Profile" className="my-profile-photo" />
       <h3 className="profile-name">Adorn Choga</h3>

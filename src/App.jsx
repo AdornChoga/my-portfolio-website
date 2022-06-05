@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import NavbarDesktop from './components/navbar-desktop/NavbarDesktop';
+import NavigationBar from './components/navigation-bar/NavigationBar';
 import NavbarMobile from './components/navbar-mobile/NavbarMobile';
 import Views from './Views/Views';
 
 const App = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
+  const [isDesktop, setDesktop] = useState(window.innerWidth >= 991);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 768);
+    setDesktop(window.innerWidth >= 991);
   };
 
   useEffect(() => {
@@ -17,9 +17,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className={isDesktop ? 'row main-container' : ''}>
-      {isDesktop ? <NavbarDesktop /> : <NavbarMobile />}
-      <div className="col border w-100 page-content">
+    <div className={isDesktop ? 'main-container' : 'w-100'}>
+      <div className={isDesktop ? 'navbar-container' : ''}>
+        {isDesktop ? <NavigationBar /> : <NavbarMobile />}
+      </div>
+      <div className="border page-content">
         <Views />
       </div>
     </div>
