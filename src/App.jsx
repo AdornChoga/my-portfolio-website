@@ -21,7 +21,7 @@ const App = () => {
       <div className={isDesktop ? 'navbar-container' : ''}>
         {isDesktop ? <NavigationBar /> : <NavbarMobile />}
       </div>
-      <div className="border page-content">
+      <div className="page-content">
         <Views />
       </div>
     </div>
