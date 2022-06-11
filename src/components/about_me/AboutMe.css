@@ -28,6 +28,34 @@
   text-align: center;
 }
 
+.microverse_achievements,
+.mongodb_achievements {
+  font-size: 2.5rem !important;
+  color: white !important;
+  text-align: center !important;
+  margin: 0 !important;
+  width: 100%;
+}
+
+.microverse_achievements {
+  background-color: #6E29FE !important;
+}
+
+.mongodb_achievements {
+  background-color: #01684D;
+}
+
+.mongo_image {
+  width: 90%;
+  height: auto;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+  background-color: rgb(110, 136, 170);
+  padding: 1.5rem;
+}
+
 @media screen and (max-width: 990px) {
   .about_me_container {
     margin: 0;

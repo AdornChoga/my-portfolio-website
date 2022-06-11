@@ -1,6 +1,9 @@
 import React from 'react';
+import { Accordion, Carousel } from 'react-bootstrap';
 import MyProfile from '../../assets/images/my-profile.png';
 import './AboutMe.css';
+// import m001 from '../../assets/images/M001_proof_of_completion.jpeg';
+// import m100 from '../../assets/images/M100_proof_of_completion.jpeg';
 
 const AboutMe = () => (
   <div className="about_me_container">
@@ -18,6 +21,90 @@ const AboutMe = () => (
         I&apos;m very human and finds peace in talking to positive minded
         people. Back to my developer side, I&apos;m ...
       </p>
+    </div>
+    <div>
+      <h2 className="achievements_title">Achievements</h2>
+      <Accordion defaultActiveKey="0">
+        <Accordion.Item eventKey="1">
+          <Accordion.Header className="p-0">
+            <h3 className="microverse_achievements">Microverse</h3>
+          </Accordion.Header>
+          <Accordion.Body>
+            <Carousel variant="dark">
+              <Carousel.Item>
+                <div className="d-flex justify-content-center">
+                  <a
+                    href="https://www.credential.net/9a9a1afc-bddf-4594-84b8-97537d1711fb#gs.3awixu"
+                    className="w-50"
+                  >
+                    <img
+                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/52034034"
+                      alt="ruby-on-rails"
+                    />
+                  </a>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="d-flex justify-content-center">
+                  <a
+                    href="https://www.credential.net/fa903a17-d64a-40b5-9169-f2eababa3e9c#gs.2sk691"
+                    className="w-50"
+                  >
+                    <img
+                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/50177628"
+                      alt="ruby"
+                    />
+                  </a>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="d-flex justify-content-center">
+                  <a
+                    href="https://www.credential.net/2f152912-9dd3-401a-b7c8-f7cf067def8b#gs.2skfzi"
+                    className="w-50"
+                  >
+                    <img
+                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/47857961"
+                      alt="react/redux"
+                    />
+                  </a>
+                </div>
+              </Carousel.Item>
+            </Carousel>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      {/* <h3 className="mongodb_achievements">MongoDB University</h3>
+      <Carousel variant="dark">
+        <Carousel.Item>
+          <div className="d-flex justify-content-center">
+            <a
+              href="https://www.credential.net/9a9a1afc-bddf-4594-84b8-97537d1711fb#gs.3awixu"
+              className="w-50"
+            >
+              <img
+                src={m001}
+                alt="m001_proof_of_completion"
+                className="mongo_image"
+              />
+            </a>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="d-flex justify-content-center">
+            <a
+              href="https://www.credential.net/fa903a17-d64a-40b5-9169-f2eababa3e9c#gs.2sk691"
+              className="w-50"
+            >
+              <img
+                src={m100}
+                alt="m100_proof_of_completion"
+                className="mongo_image"
+              />
+            </a>
+          </div>
+        </Carousel.Item>
+      </Carousel> */}
     </div>
   </div>
 );
