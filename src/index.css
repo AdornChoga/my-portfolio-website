@@ -23,14 +23,14 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #4d91de;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #091221;
-    border: 0px none #ffffff;
-    border-radius: 53px;
+  background: #091221;
+  border: 0 none #fff;
+  border-radius: 53px;
 }
 
 @media screen and (max-width: 990px) {

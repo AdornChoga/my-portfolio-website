@@ -2,7 +2,7 @@
   margin-top: 5rem;
   width: 80%;
   height: 90vh;
-  background-color: #222222;
+  background-color: #222;
   overflow: auto;
   padding: 2rem;
 }
@@ -28,6 +28,12 @@
   text-align: center;
 }
 
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .microverse_achievements,
 .mongodb_achievements {
   font-size: 2.5rem !important;
@@ -38,22 +44,29 @@
 }
 
 .microverse_achievements {
-  background-color: #6E29FE !important;
+  background-color: #6e29fe !important;
 }
 
 .mongodb_achievements {
-  background-color: #01684D;
+  background-color: #01684d !important;
 }
 
 .mongo_image {
-  width: 90%;
-  height: auto;
+  width: 60rem;
+  height: 46.4rem;
 }
 
 span.carousel-control-prev-icon,
 span.carousel-control-next-icon {
   background-color: rgb(110, 136, 170);
   padding: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .mongo_image {
+    width: 35rem;
+    height: 46.4rem;
+  }
 }
 
 @media screen and (max-width: 990px) {

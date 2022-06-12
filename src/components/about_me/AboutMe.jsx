@@ -2,8 +2,9 @@ import React from 'react';
 import { Accordion, Carousel } from 'react-bootstrap';
 import MyProfile from '../../assets/images/my-profile.png';
 import './AboutMe.css';
-// import m001 from '../../assets/images/M001_proof_of_completion.jpeg';
-// import m100 from '../../assets/images/M100_proof_of_completion.jpeg';
+import m001 from '../../assets/images/M001_proof_of_completion.jpeg';
+import m100 from '../../assets/images/M100_proof_of_completion.jpeg';
+import m220 from '../../assets/images/M220JS_proof_of_completion.jpeg';
 
 const AboutMe = () => (
   <div className="about_me_container">
@@ -24,7 +25,7 @@ const AboutMe = () => (
     </div>
     <div>
       <h2 className="achievements_title">Achievements</h2>
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey="0" className="achievements">
         <Accordion.Item eventKey="1">
           <Accordion.Header className="p-0">
             <h3 className="microverse_achievements">Microverse</h3>
@@ -73,38 +74,58 @@ const AboutMe = () => (
             </Carousel>
           </Accordion.Body>
         </Accordion.Item>
+        <Accordion.Item>
+          <Accordion.Header>
+            <h3 className="mongodb_achievements">MongoDB University</h3>
+          </Accordion.Header>
+          <Accordion.Body>
+            <Carousel variant="dark">
+              <Carousel.Item>
+                <div className="d-flex justify-content-center">
+                  <a
+                    href="https://university.mongodb.com/course_completion/59af5f42-1609-4022-8b9c-276d7cc169ed?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+                    className="w-50"
+                  >
+                    <img
+                      src={m001}
+                      alt="m001_proof_of_completion"
+                      className="mongo_image"
+                    />
+                  </a>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="d-flex justify-content-center">
+                  <a
+                    href="https://university.mongodb.com/course_completion/04b17cfc-cbfa-456b-b5d3-c4347d6c16d9?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+                    className="w-50"
+                  >
+                    <img
+                      src={m100}
+                      alt="m100_proof_of_completion"
+                      className="mongo_image"
+                    />
+                  </a>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="d-flex justify-content-center">
+                  <a
+                    href="https://university.mongodb.com/course_completion/ab3b20a7-fa24-488f-ab50-40f73a093ee1?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+                    className="w-50"
+                  >
+                    <img
+                      src={m220}
+                      alt="m220_proof_of_completion"
+                      className="mongo_image"
+                    />
+                  </a>
+                </div>
+              </Carousel.Item>
+            </Carousel>
+          </Accordion.Body>
+        </Accordion.Item>
       </Accordion>
-      {/* <h3 className="mongodb_achievements">MongoDB University</h3>
-      <Carousel variant="dark">
-        <Carousel.Item>
-          <div className="d-flex justify-content-center">
-            <a
-              href="https://www.credential.net/9a9a1afc-bddf-4594-84b8-97537d1711fb#gs.3awixu"
-              className="w-50"
-            >
-              <img
-                src={m001}
-                alt="m001_proof_of_completion"
-                className="mongo_image"
-              />
-            </a>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="d-flex justify-content-center">
-            <a
-              href="https://www.credential.net/fa903a17-d64a-40b5-9169-f2eababa3e9c#gs.2sk691"
-              className="w-50"
-            >
-              <img
-                src={m100}
-                alt="m100_proof_of_completion"
-                className="mongo_image"
-              />
-            </a>
-          </div>
-        </Carousel.Item>
-      </Carousel> */}
     </div>
   </div>
 );
