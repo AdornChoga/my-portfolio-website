@@ -1,0 +1,99 @@
+.about_me_container {
+  margin-top: 5rem;
+  width: 80%;
+  height: 90vh;
+  background-color: #222;
+  overflow: auto;
+  padding: 2rem;
+}
+
+.page_title {
+  text-align: center;
+  color: rgb(134, 131, 131);
+  font-size: 4rem;
+}
+
+.profile_photo {
+  width: 100%;
+  height: auto;
+}
+
+.about_text {
+  font-size: 2.2rem;
+}
+
+.achievements_title {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.microverse_achievements,
+.mongodb_achievements,
+.github_achievements {
+  font-size: 2.2rem;
+  color: white !important;
+  text-align: center !important;
+  margin: 0 !important;
+  width: 100%;
+}
+
+.microverse_achievements {
+  background-color: #6e29fe !important;
+}
+
+.mongodb_achievements {
+  background-color: #01684d !important;
+}
+
+.github_achievements {
+  background-color: #f1c917 !important;
+}
+
+.mongo_image {
+  width: 60rem;
+  height: 46.4rem;
+}
+
+.github_trophies {
+  text-align: center;
+}
+
+.github_trophies > img {
+  width: 90%;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+  background-color: rgb(110, 136, 170);
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .mongo_image {
+    width: 35rem;
+    height: 46.4rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .github_trophies > img {
+    width: 100%;
+  }
+
+  .about_me_container {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .about_text {
+    font-size: 1.9rem;
+  }
+}
