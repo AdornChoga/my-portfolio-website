@@ -74,7 +74,7 @@ const AboutMe = () => (
             </Carousel>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item>
+        <Accordion.Item eventKey="2">
           <Accordion.Header>
             <h3 className="mongodb_achievements">MongoDB University</h3>
           </Accordion.Header>
@@ -123,6 +123,17 @@ const AboutMe = () => (
                 </div>
               </Carousel.Item>
             </Carousel>
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="3">
+          <Accordion.Header>
+            <h3 className="github_achievements">GitHub Trophies</h3>
+          </Accordion.Header>
+          <Accordion.Body className="github_trophies">
+            <img
+              src="https://github-profile-trophy.vercel.app/?username=adornchoga"
+              alt="adornchoga"
+            />
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

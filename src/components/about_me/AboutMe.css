@@ -35,7 +35,8 @@
 }
 
 .microverse_achievements,
-.mongodb_achievements {
+.mongodb_achievements,
+.github_achievements {
   font-size: 2.5rem !important;
   color: white !important;
   text-align: center !important;
@@ -51,9 +52,21 @@
   background-color: #01684d !important;
 }
 
+.github_achievements {
+  background-color: #f1c917 !important;
+}
+
 .mongo_image {
   width: 60rem;
   height: 46.4rem;
+}
+
+.github_trophies {
+  text-align: center;
+}
+
+.github_trophies > img {
+  width: 90%;
 }
 
 span.carousel-control-prev-icon,
