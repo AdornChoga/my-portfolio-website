@@ -1,18 +1,3 @@
-.about_me_container {
-  margin-top: 5rem;
-  width: 80%;
-  height: 90vh;
-  background-color: #222;
-  overflow: auto;
-  padding: 2rem;
-}
-
-.page_title {
-  text-align: center;
-  color: rgb(134, 131, 131);
-  font-size: 4rem;
-}
-
 .profile_photo {
   width: 100%;
   height: auto;
@@ -85,12 +70,6 @@ span.carousel-control-next-icon {
 @media screen and (max-width: 990px) {
   .github_trophies > img {
     width: 100%;
-  }
-
-  .about_me_container {
-    margin: 0;
-    width: 100%;
-    min-height: 100vh;
   }
 
   .about_text {

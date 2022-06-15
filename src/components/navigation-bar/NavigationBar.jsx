@@ -38,7 +38,7 @@ const NavbarDesktop = () => (
       <li>
         <NavLink to="/portfolio">
           <FaSuitcase className="icon" />
-          <p className="nav-title">Porfolio</p>
+          <p className="nav-title">Projects</p>
         </NavLink>
       </li>
       <li>

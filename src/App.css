@@ -21,9 +21,32 @@
   width: 100%;
 }
 
+.component-container {
+  margin-top: 5rem;
+  width: 80%;
+  height: 90vh;
+  background-color: #222;
+  overflow: auto;
+  padding: 2rem;
+}
+
+.component-title {
+  text-align: center;
+  color: rgb(134, 131, 131);
+  font-size: 4rem;
+}
+
 @media screen and (min-width: 991px) {
   .page-content {
     padding-left: 15rem;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .component-container {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
   }
 }

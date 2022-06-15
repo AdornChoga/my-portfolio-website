@@ -7,8 +7,8 @@ import m100 from '../../assets/images/M100_proof_of_completion.jpeg';
 import m220 from '../../assets/images/M220JS_proof_of_completion.jpeg';
 
 const AboutMe = () => (
-  <div className="about_me_container">
-    <h1 className="page_title">About Me</h1>
+  <div className="component-container">
+    <h1 className="component_title">About Me</h1>
     <div className="row border mb-5">
       <div className="col-md-3">
         <img src={MyProfile} alt="Profile" className="profile_photo" />
