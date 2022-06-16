@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './Projects.css';
+// import BudgetApp from '../../assets/images/budget-app.png';
 
 const Projects = () => (
   <div className="component-container">
@@ -26,18 +27,10 @@ const Projects = () => (
       modules={[EffectCoverflow, Pagination]}
       className="mySwiper"
     >
-      <SwiperSlide>
-        <h3 className="text-center">Card 1</h3>
-      </SwiperSlide>
-      <SwiperSlide>
-        <h3 className="text-center">Card 2</h3>
-      </SwiperSlide>
-      <SwiperSlide>
-        <h3 className="text-center">Card 3</h3>
-      </SwiperSlide>
-      <SwiperSlide>
-        <h3 className="text-center">Card 4</h3>
-      </SwiperSlide>
+      <SwiperSlide />
+      <SwiperSlide />
+      <SwiperSlide />
+      <SwiperSlide />
     </Swiper>
   </div>
 );
