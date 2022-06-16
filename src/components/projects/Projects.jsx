@@ -1,6 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import {
+  EffectCoverflow, Pagination, Navigation, Keyboard,
+} from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -23,10 +25,15 @@ const Projects = () => (
         modifier: 1,
         slideShadows: true,
       }}
-      pagination
+      pagination={{
+        clickable: true,
+      }}
+      keyboard={{
+        enabled: true,
+      }}
       navigation
       loop
-      modules={[EffectCoverflow, Pagination, Navigation]}
+      modules={[EffectCoverflow, Pagination, Navigation, Keyboard]}
       className="mySwiper"
     >
       <SwiperSlide />
