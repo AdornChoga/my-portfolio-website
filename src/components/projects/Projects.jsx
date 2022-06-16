@@ -1,9 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import './Projects.css';
 // import BudgetApp from '../../assets/images/budget-app.png';
 
@@ -23,8 +24,9 @@ const Projects = () => (
         slideShadows: true,
       }}
       pagination
+      navigation
       loop
-      modules={[EffectCoverflow, Pagination]}
+      modules={[EffectCoverflow, Pagination, Navigation]}
       className="mySwiper"
     >
       <SwiperSlide />
