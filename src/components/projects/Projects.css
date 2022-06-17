@@ -8,10 +8,40 @@
   padding-top: 16rem;
 }
 
-.swiper-slide {
-  position: relative;
-  width: 75rem;
-  height: 69%;
+@media screen and (min-width: 990px) {
+  .swiper {
+    padding-top: 20rem;
+  }
+
+  .swiper-slide {
+    width: 50rem;
+    height: 59%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .swiper {
+    padding-top: 13rem;
+  }
+
+  .swiper-slide {
+    position: relative;
+    width: 75rem;
+    height: 45rem;
+  }
+
+  .swiper-slide-active {
+    width: 85rem;
+    height: 50rem;
+  }
+
+  .swiper-slide-prev {
+    margin-top: 3rem;
+  }
+
+  .swiper-slide-next {
+    margin-top: 3rem;
+  }
 }
 
 .card {
@@ -50,7 +80,7 @@
   -o-transform: rotateX(180deg);
 }
 
-.swiper-slide.swiper-slide-active:hover .card {
+.swiper-slide-active:hover .card {
   transform: rotateX(-180deg);
   -webkit-transform: rotateX(-180deg);
   -moz-transform: rotateX(-180deg);

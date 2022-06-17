@@ -37,42 +37,26 @@ const Projects = () => (
     >
       <SwiperSlide>
         <div className="card">
-          <div className="card-front">
-            <span>Card Front</span>
-          </div>
-          <div className="card-back">
-            <span>Card Back</span>
-          </div>
+          <div className="card-front" />
+          <div className="card-back" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="card">
-          <div className="card-front">
-            <span>Card Front</span>
-          </div>
-          <div className="card-back">
-            <span>Card Back</span>
-          </div>
+          <div className="card-front" />
+          <div className="card-back" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="card">
-          <div className="card-front">
-            <span>Card Front</span>
-          </div>
-          <div className="card-back">
-            <span>Card Back</span>
-          </div>
+          <div className="card-front" />
+          <div className="card-back" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="card">
-          <div className="card-front">
-            <span>Card Front</span>
-          </div>
-          <div className="card-back">
-            <span>Card Back</span>
-          </div>
+          <div className="card-front" />
+          <div className="card-back" />
         </div>
       </SwiperSlide>
     </Swiper>
