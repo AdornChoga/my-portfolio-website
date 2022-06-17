@@ -22,9 +22,9 @@
 }
 
 .component-container {
-  margin-top: 5rem;
-  width: 80%;
-  height: 90vh;
+  margin-top: 2.5rem;
+  width: 90%;
+  height: 95vh;
   background-color: #222;
   overflow: auto;
   padding: 2rem;
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 990px) {
   .component-container {
     margin: 0;
     width: 100%;
