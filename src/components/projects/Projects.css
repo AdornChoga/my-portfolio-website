@@ -93,7 +93,7 @@
 }
 
 .description {
-  outline: #4D91DE inset;
+  outline: #4d91de inset;
   text-align: center;
   padding: 1rem;
   width: 80%;
@@ -118,11 +118,11 @@
 }
 
 .links button:active {
-  transform: scale(.9);
-  -webkit-transform: scale(.9);
-  -moz-transform: scale(.9);
-  -ms-transform: scale(.9);
-  -o-transform: scale(.9);
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 
 @media screen and (max-width: 990px) {
