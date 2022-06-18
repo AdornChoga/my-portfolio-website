@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
+import './Projects.css';
 
 const Project = ({ project }) => {
   const [isDesktop, setDesktop] = useState(window.innerWidth >= 991);
@@ -25,12 +26,22 @@ const Project = ({ project }) => {
   } = project;
   return (
     <div className="project-card">
-      <img
-        src={isDesktop ? desktopImage : mobileImage}
-        alt={name}
-        className="card-front"
-      />
+      <div className="card-front">
+        <img
+          src={isDesktop ? desktopImage : mobileImage}
+          alt={name}
+          className="project-image"
+        />
+        <button type="button" className="read-more">
+          Read More
+        </button>
+      </div>
       <div className="card-back">
+        {!isDesktop && (
+          <button type="button" className="close-btn">
+            close
+          </button>
+        )}
         <h2 className="project-name">{name}</h2>
         <p className="description">{description}</p>
         <div>
