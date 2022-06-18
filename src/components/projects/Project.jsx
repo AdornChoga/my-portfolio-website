@@ -32,9 +32,11 @@ const Project = ({ project }) => {
           alt={name}
           className="project-image"
         />
-        <button type="button" className="read-more">
-          Read More
-        </button>
+        {!isDesktop && (
+          <button type="button" className="read-more">
+            Read More
+          </button>
+        )}
       </div>
       <div className="card-back">
         {!isDesktop && (

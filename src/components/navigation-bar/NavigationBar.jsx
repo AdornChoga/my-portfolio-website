@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import {
   FaHouseUser,
   FaUserTie,
-  FaRegIdCard,
   FaSuitcase,
   FaEnvelope,
 } from 'react-icons/fa';
@@ -27,12 +26,6 @@ const NavbarDesktop = () => (
         <NavLink to="/about-me">
           <FaUserTie className="icon" />
           <p className="nav-title">About Me</p>
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/resume">
-          <FaRegIdCard className="icon" />
-          <p className="nav-title">Resume</p>
         </NavLink>
       </li>
       <li>

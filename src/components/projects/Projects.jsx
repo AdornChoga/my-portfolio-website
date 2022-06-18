@@ -69,6 +69,18 @@ const Projects = () => {
         <SwiperSlide>
           <Project project={projects[0]} />
         </SwiperSlide>
+        <SwiperSlide>
+          <Project project={projects[1]} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Project project={projects[2]} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Project project={projects[3]} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Project project={projects[4]} />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
