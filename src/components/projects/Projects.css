@@ -14,8 +14,8 @@
   }
 
   .swiper-slide {
-    width: 50rem;
-    height: 59%;
+    width: 60rem;
+    height: 70%;
   }
 }
 
@@ -44,7 +44,7 @@
   }
 }
 
-.card {
+.project-card {
   width: 100%;
   height: 100%;
   transition: transform 2s;
@@ -64,14 +64,14 @@
   -webkit-backface-visibility: hidden;
 }
 
-.card-front {
-  background-image: url('../../assets/images/awesome-books-wf.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+  overflow: auto;
   background: #1c1f54;
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
@@ -80,12 +80,49 @@
   -o-transform: rotateX(180deg);
 }
 
-.swiper-slide-active:hover .card {
+.swiper-slide-active:hover .project-card {
   transform: rotateX(-180deg);
   -webkit-transform: rotateX(-180deg);
   -moz-transform: rotateX(-180deg);
   -ms-transform: rotateX(-180deg);
   -o-transform: rotateX(-180deg);
+}
+
+.project-name {
+  font-size: 3rem;
+}
+
+.description {
+  outline: #4D91DE inset;
+  text-align: center;
+  padding: 1rem;
+  width: 80%;
+  font-size: 2rem;
+}
+
+.tech-used {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links {
+  margin-top: 3rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.links button:active {
+  transform: scale(.9);
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  -ms-transform: scale(.9);
+  -o-transform: scale(.9);
 }
 
 @media screen and (max-width: 990px) {
