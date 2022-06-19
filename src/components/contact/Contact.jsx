@@ -73,9 +73,14 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form">
-          <Form>
+          <Form action="https://formspree.io/f/xeqnwqdv" method="POST">
             <Form.Group className="mb-5 form-group" controlId="formBasicEmail">
-              <Form.Control type="text" required className="input" />
+              <Form.Control
+                type="text"
+                name="fullName"
+                required
+                className="input"
+              />
               <Form.Label>Full Name</Form.Label>
               <span>Full Name</span>
             </Form.Group>
@@ -83,7 +88,12 @@ const Contact = () => {
               className="mb-5 form-group"
               controlId="formBasicPassword"
             >
-              <Form.Control type="email" required className="input" />
+              <Form.Control
+                type="email"
+                name="email"
+                required
+                className="input"
+              />
               <Form.Label>Email</Form.Label>
               <span>Email</span>
             </Form.Group>
@@ -91,7 +101,12 @@ const Contact = () => {
               className="mb-5 form-group textarea"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Control as="textarea" rows={4} className="input" />
+              <Form.Control
+                as="textarea"
+                name="message"
+                rows={4}
+                className="input"
+              />
               <Form.Label>Message</Form.Label>
               <span>Message</span>
             </Form.Group>
