@@ -29,7 +29,7 @@ const NavbarDesktop = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink to="/portfolio">
+        <NavLink to="/projects">
           <FaSuitcase className="icon" />
           <p className="nav-title">Projects</p>
         </NavLink>
