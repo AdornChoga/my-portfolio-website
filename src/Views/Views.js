@@ -9,7 +9,7 @@ const Views = () => (
   <Routes>
     <Route index element={<Home />} />
     <Route path="/about-me" element={<AboutMe />} />
-    <Route path="/portfolio" element={<Projects />} />
+    <Route path="/projects" element={<Projects />} />
     <Route path="/contact-me" element={<Contact />} />
   </Routes>
 );
