@@ -145,7 +145,7 @@
 .submit-btn {
   padding: 0.4rem 1.9rem;
   font-size: 1.8rem;
-  border: .2rem solid white;
+  border: 0.2rem solid white;
   font-weight: 500;
   background-color: transparent !important;
 }
