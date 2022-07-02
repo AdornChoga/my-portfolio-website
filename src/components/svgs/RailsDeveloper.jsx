@@ -2,7 +2,7 @@ import React from 'react';
 
 const RailsDeveloper = () => (
   <svg
-    width="339"
+    width="300"
     height="28"
     viewBox="0 0 339 28"
     fill="none"

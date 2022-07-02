@@ -20,6 +20,10 @@ nav {
   height: auto;
 }
 
+.profile-name {
+  color: #ff724c;
+}
+
 .nav-links-container {
   width: 100%;
   list-style-type: none;
@@ -33,11 +37,11 @@ a {
 }
 
 a:hover {
-  color: #4d91de;
+  color: #ff724c;
 }
 
 .active {
-  color: #4d91de;
+  color: #49b661;
 }
 
 .nav-links-container > li {

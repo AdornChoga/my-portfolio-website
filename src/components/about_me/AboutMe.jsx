@@ -11,7 +11,7 @@ import {
 const AboutMe = () => (
   <div className="component-container">
     <h1 className="component_title">About Me</h1>
-    <div className="row border mb-5">
+    <div className="row mb-5">
       <div className="col-md-3">
         <img src={MyProfile} alt="Profile" className="profile_photo" />
       </div>
