@@ -1,10 +1,12 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { Accordion, Carousel } from 'react-bootstrap';
 import MyProfile from '../../assets/images/my-profile.png';
 import './AboutMe.css';
-import m001 from '../../assets/images/M001_proof_of_completion.jpeg';
-import m100 from '../../assets/images/M100_proof_of_completion.jpeg';
-import m220 from '../../assets/images/M220JS_proof_of_completion.jpeg';
+import {
+  microverseAchievements,
+  mongodbAchievements,
+} from '../achievements/achievements';
 
 const AboutMe = () => (
   <div className="component-container">
@@ -14,15 +16,15 @@ const AboutMe = () => (
         <img src={MyProfile} alt="Profile" className="profile_photo" />
       </div>
       <p className="col-md text-light about_text">
-        I&apos;m a full-stack web developer working with javascript and ruby. I&apos;m
-        open to learning new things as I&apos;m a very adaptive person and I&apos;m also a
-        fast learner. Side note: I learned the Mevn stack in just four weeks. My
-        main source of motivation is my passion to create innovative solutions
-        to real-world problems through code. My friends in the software industry
-        who are actually developers I have worked with on projects in the past
-        describe me as a creative thinker and versatile person in agile
-        development roles. In my free time, I love to watch movies about Cyber
-        Security and Tech Evolution.
+        I&apos;m a full-stack web developer working with javascript and ruby.
+        I&apos;m open to learning new things as I&apos;m a very adaptive person
+        and I&apos;m also a fast learner. Side note: I learned the Mevn stack in
+        just four weeks. My main source of motivation is my passion to create
+        innovative solutions to real-world problems through code. My friends in
+        the software industry who are actually developers I have worked with on
+        projects in the past describe me as a creative thinker and versatile
+        person in agile development roles. In my free time, I love to watch
+        movies about Cyber Security and Tech Evolution.
       </p>
     </div>
     <div>
@@ -34,45 +36,15 @@ const AboutMe = () => (
           </Accordion.Header>
           <Accordion.Body>
             <Carousel variant="dark">
-              <Carousel.Item>
-                <div className="d-flex justify-content-center">
-                  <a
-                    href="https://www.credential.net/9a9a1afc-bddf-4594-84b8-97537d1711fb#gs.3awixu"
-                    className="w-50"
-                  >
-                    <img
-                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/52034034"
-                      alt="ruby-on-rails"
-                    />
-                  </a>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="d-flex justify-content-center">
-                  <a
-                    href="https://www.credential.net/fa903a17-d64a-40b5-9169-f2eababa3e9c#gs.2sk691"
-                    className="w-50"
-                  >
-                    <img
-                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/50177628"
-                      alt="ruby"
-                    />
-                  </a>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="d-flex justify-content-center">
-                  <a
-                    href="https://www.credential.net/2f152912-9dd3-401a-b7c8-f7cf067def8b#gs.2skfzi"
-                    className="w-50"
-                  >
-                    <img
-                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/47857961"
-                      alt="react/redux"
-                    />
-                  </a>
-                </div>
-              </Carousel.Item>
+              {microverseAchievements.map((achievement) => (
+                <Carousel.Item key={uuidv4()}>
+                  <div className="d-flex justify-content-center">
+                    <a href={achievement.certificateLink} className="w-50">
+                      <img src={achievement.image} alt={achievement.name} />
+                    </a>
+                  </div>
+                </Carousel.Item>
+              ))}
             </Carousel>
           </Accordion.Body>
         </Accordion.Item>
@@ -82,48 +54,19 @@ const AboutMe = () => (
           </Accordion.Header>
           <Accordion.Body>
             <Carousel variant="dark">
-              <Carousel.Item>
-                <div className="d-flex justify-content-center">
-                  <a
-                    href="https://university.mongodb.com/course_completion/59af5f42-1609-4022-8b9c-276d7cc169ed?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
-                    className="w-50"
-                  >
-                    <img
-                      src={m001}
-                      alt="m001_proof_of_completion"
-                      className="mongo_image"
-                    />
-                  </a>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="d-flex justify-content-center">
-                  <a
-                    href="https://university.mongodb.com/course_completion/04b17cfc-cbfa-456b-b5d3-c4347d6c16d9?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
-                    className="w-50"
-                  >
-                    <img
-                      src={m100}
-                      alt="m100_proof_of_completion"
-                      className="mongo_image"
-                    />
-                  </a>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="d-flex justify-content-center">
-                  <a
-                    href="https://university.mongodb.com/course_completion/ab3b20a7-fa24-488f-ab50-40f73a093ee1?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
-                    className="w-50"
-                  >
-                    <img
-                      src={m220}
-                      alt="m220_proof_of_completion"
-                      className="mongo_image"
-                    />
-                  </a>
-                </div>
-              </Carousel.Item>
+              {mongodbAchievements.map((achievement) => (
+                <Carousel.Item key={uuidv4()}>
+                  <div className="d-flex justify-content-center">
+                    <a href={achievement.certificateLink} className="w-50">
+                      <img
+                        src={achievement.image}
+                        alt={achievement.name}
+                        className="mongo_image"
+                      />
+                    </a>
+                  </div>
+                </Carousel.Item>
+              ))}
             </Carousel>
           </Accordion.Body>
         </Accordion.Item>
