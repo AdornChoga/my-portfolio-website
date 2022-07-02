@@ -14,13 +14,15 @@ const AboutMe = () => (
         <img src={MyProfile} alt="Profile" className="profile_photo" />
       </div>
       <p className="col-md text-light about_text">
-        I&apos;m a full-stack software developer working with ruby and
-        javascript. My daily driver is my passion for streamlining innovative
-        solutions to problems through code, a tool that I have fallen in love
-        with and it motivates me to wake up and face the world every day. Sounds
-        like a more like a developer and less of a human right? &#128512; Well,
-        I&apos;m very human and finds peace in talking to positive minded
-        people. Back to my developer side, I&apos;m ...
+        I&apos;m a full-stack web developer working with javascript and ruby. I&apos;m
+        open to learning new things as I&apos;m a very adaptive person and I&apos;m also a
+        fast learner. Side note: I learned the Mevn stack in just four weeks. My
+        main source of motivation is my passion to create innovative solutions
+        to real-world problems through code. My friends in the software industry
+        who are actually developers I have worked with on projects in the past
+        describe me as a creative thinker and versatile person in agile
+        development roles. In my free time, I love to watch movies about Cyber
+        Security and Tech Evolution.
       </p>
     </div>
     <div>
