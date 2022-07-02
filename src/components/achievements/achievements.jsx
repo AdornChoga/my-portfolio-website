@@ -4,6 +4,27 @@ import m220 from '../../assets/images/M220JS_proof_of_completion.jpeg';
 
 export const microverseAchievements = [
   {
+    name: 'Full-Stack Web Development',
+    certificateLink:
+      'https://www.credential.net/081d3d7f-e697-438d-8807-b2e2609dafc6#gs.4lwyzl',
+    image:
+      'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/53198275',
+  },
+  {
+    name: 'javascript',
+    certificateLink:
+      'https://www.credential.net/5510711a-96b5-4a08-8bcd-7a2dc81870ec#gs.4m1rsh',
+    image:
+      'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/45950874',
+  },
+  {
+    name: 'react/redux',
+    certificateLink:
+      'https://www.credential.net/2f152912-9dd3-401a-b7c8-f7cf067def8b#gs.2skfzi',
+    image:
+      'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/47857961',
+  },
+  {
     name: 'ruby on rails',
     certificateLink:
       'https://www.credential.net/9a9a1afc-bddf-4594-84b8-97537d1711fb#gs.3awixu',
@@ -16,13 +37,6 @@ export const microverseAchievements = [
       'https://www.credential.net/fa903a17-d64a-40b5-9169-f2eababa3e9c#gs.2sk691',
     image:
       'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/50177628',
-  },
-  {
-    name: 'react/redux',
-    certificateLink:
-      'https://www.credential.net/2f152912-9dd3-401a-b7c8-f7cf067def8b#gs.2skfzi',
-    image:
-      'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/47857961',
   },
 ];
 
