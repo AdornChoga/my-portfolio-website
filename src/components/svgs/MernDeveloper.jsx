@@ -2,7 +2,7 @@ import React from 'react';
 
 const MernDeveloper = () => (
   <svg
-    width="337"
+    width="300"
     height="29"
     viewBox="0 0 337 29"
     fill="none"

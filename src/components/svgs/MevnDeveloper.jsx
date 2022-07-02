@@ -2,7 +2,7 @@ import React from 'react';
 
 const MevnDeveloper = () => (
   <svg
-    width="340"
+    width="300"
     height="28"
     viewBox="0 0 340 28"
     fill="none"
